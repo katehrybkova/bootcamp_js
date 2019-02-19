@@ -22,28 +22,28 @@
 
 // const adminLogin = 'admin';
 // const adminPassword = 'm4ngo1zh4ackz0r';
-// const name = prompt('Введите логин');
-// console.log(name);
+const name = prompt('Введите логин');
+console.log(name);
 
 
-// if (name === null) {
-//     alert('Отменено пользователем!')
+if (name === null) {
+    alert('Отменено пользователем!')
 
-// } else if (name !== 'admin') {
-//     alert('Доступ запрещен, неверный логин!');
-// } else {
-//     const adminPass = prompt('Введите пароль');
-//     console.log(name);
+} else if (name !== 'admin') {
+    alert('Доступ запрещен, неверный логин!');
+} else {
+    const adminPass = prompt('Введите пароль');
+    console.log(name);
 
-//     if (adminPass === null) {
-//         alert('Отменено пользователем!')
-//     } else if (adminPass !== 'm4ngo1zh4ackz0r') {
-//         alert('Доступ запрещен, неверный пароль!');
-//     } else {
-//         alert('Добро пожаловать!')
+    if (adminPass === null) {
+        alert('Отменено пользователем!')
+    } else if (adminPass !== 'm4ngo1zh4ackz0r') {
+        alert('Доступ запрещен, неверный пароль!');
+    } else {
+        alert('Добро пожаловать!')
 
-//     }
-// }
+    }
+}
 
 
 
@@ -72,31 +72,31 @@
 //   Если мест нигде нет, показать alert с сообщением 'Извините, столько мест нет ни в одной группе!'
 // */
 
-const sharm = 15;
-const hurgada = 25;
-const taba = 6;
-const places = prompt('Введите количество мест');
-if (Number.isInteger(+places) && +places > 0) {
+// const sharm = 15;
+// const hurgada = 25;
+// const taba = 6;
+// const places = prompt('Введите количество мест');
+// if (Number.isInteger(+places) && +places > 0) {
 
-    if (+places <= taba) {
-        hotel = 'taba';
+//     if (+places <= taba) {
+//         hotel = 'taba';
 
-    } else if (+places <= hurgada) {
-        hotel = 'hurgada';
+//     } else if (+places <= hurgada) {
+//         hotel = 'hurgada';
 
-    } else if (+places <= sharm) {
-        hotel = 'sharm';
-    }
+//     } else if (+places <= sharm) {
+//         hotel = 'sharm';
+//     }
 
 
-    if (hotel && confirm(`Хотите ли вы остаться в $(hotel)?`)) {
-        alert(`добро пожаловать в $(hotel)`);
-    } 
+//     if (hotel && confirm(`Хотите ли вы остаться в $(hotel)?`)) {
+//         alert(`добро пожаловать в $(hotel)`);
+//     } 
     
-    else if (!hotel) {
-        alert('Нам очень жаль, приходите еще!');
-    }
-    else
+//     else if (!hotel) {
+//         alert('Нам очень жаль, приходите еще!');
+//     }
+//     else
 
 
 
@@ -116,4 +116,4 @@ if (Number.isInteger(+places) && +places > 0) {
     // }
     // } else if (!places) {
     //     alert('Нам очень жаль, приходите еще!');
-}
+// }
