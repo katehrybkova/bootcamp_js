@@ -154,7 +154,7 @@
 // let num = 1 || 2 || 3 || 4;
 // let result;
 // switch(num) {
-//     case 1 : result = 1; alert('zima');
+//     case 1 : result = 1; alert('zima') ;
 //     case 2 : result = 2; alert('vesna');
 //     case 3 : result = 3; alert('leto');
 //     case 4 : result = 4; alert('osen`');
@@ -336,6 +336,6 @@
 
 
 // Создайте массив заработных плат obj. Выведите на экран зарплату Пети и Коли.
- let salaries = {
+//  let salaries = {
      
- }
+//  }
