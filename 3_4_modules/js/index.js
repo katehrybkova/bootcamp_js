@@ -491,4 +491,15 @@
 //   account.changePassword("asdzxc"); // 'asdzxc'
   
 //   account.getAccountInfo(); // Login: 'Mango', Pass: 'asdzxc', Type: 'premium'
-  
+let products = {
+  tomatos: 15,
+  cheese: 20,
+  bakon: 30,
+  mushrooms
+}
+
+
+
+let pizzaMaker = function() {
+
+}

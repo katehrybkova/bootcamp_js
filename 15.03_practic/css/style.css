@@ -1,0 +1,64 @@
+/* ---------------add5
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+  }
+  
+  .images {
+    display: grid;
+    width: 648px;
+    margin: 0 auto;
+    padding: 8px;
+    display: grid;
+    grid-template-columns: repeat(2, 320px);
+    grid-gap: 8px;
+    list-style: none;
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2),
+      0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+  } */
+  /* ---------------add6 */
+
+
+  /* body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .list {
+    margin: 0;
+    padding: 8px;
+    outline: 1px solid teal;
+  }
+  
+  .list li {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    font-size: 24px;
+    outline: 1px solid #212121;
+  }
+  
+  .list li:not(:last-child) {
+     margin-bottom: 8px;
+  }
+  
+  .list button {
+    margin-right: 16px;
+    font-size: 24px;
+    cursor: pointer;
+    font-family: inherit;
+  } */
+  /* ---------------------------- */
+/* gallery-------------------   */
+/* ul {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: fuchsia;
+} */
+/* -------------- */

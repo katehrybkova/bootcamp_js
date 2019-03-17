@@ -339,3 +339,52 @@
 //  let salaries = {
      
 //  }
+//--------------------------metodi masivov
+// Задача. Даны два массива: ['a', 'b', 'c'] и [1, 2, 3]. Объедините их вместе.
+
+// let a = ['a', 'b', 'c'];
+// let b = [1, 2, 3];
+// let c = a.concat(b)
+// console.log(c)
+//==================Задача. Дан массив ['a', 'b', 'c']. Добавьте ему в конец элементы 1, 2, 3.
+
+// let a = ['a', 'b', 'c'];
+// a.push (1,2,3);
+//  console.log(a)
+//--------------------
+// Дан массив [1, 2, 3]. Сделайте из него массив [3, 2, 1]
+// let arr = [1, 2, 3];
+// console.log(arr.reverse())
+//------------------	Дан массив ['js', 'css', 'jq']. Выведите на экран первый элемент
+// let arr = ['js', 'css', 'jq'];
+// let cutArr = arr.shift()
+// console.log(cutArr)
+// console.log(arr)
+//----------------------
+// Дан массив [1, 2, 3, 4, 5]. С помощью метода slice запишите в новый элементы [1, 2, 3]
+// let arr = [1, 2, 3, 4, 5];
+// let slicedArr = arr.slice(0,3)
+// console.log(slicedArr)
+// console.log(arr)
+//------------------Дан массив [1, 2, 3, 4, 5]. С помощью метода splice преобразуйте массив в [1, 4, 5]
+// let arr = [1, 2, 3, 4, 5];
+// let splicedArr = arr.splice(1,2);
+// console.log(splicedArr)
+// console.log(arr)
+//-------------Дан массив [1, 2, 3, 4, 5]. 
+//С помощью метода splice сделайте из него массив [1, 'a', 'b', 2, 3, 4, 'c', 5, 'e']
+// let arr = [1, 2, 3, 4, 5];
+// let splicedArr = arr.splice(1,0,'a','b')
+//  splicedArr = arr.splice(6,0,'c')
+//  splicedArr = arr.splice(8,0,'e')
+// console.log(splicedArr)
+// console.log(arr)
+//---------------	Дан массив [3, 4, 1, 2, 7]. Отсортируйте его. Показать решение.
+// let arr = [3, 4, 1, 2, 7];
+// let sortedArr = arr.sort()
+// console.log(sortedArr)
+//------------	Дан объект {js:'test', jq: 'hello', css: 'world'}. Получите массив его ключей.
+// let obj = {js:'test', jq: 'hello', css: 'world'}
+// let keys = Object.keys(obj)
+// console.log(keys)
+

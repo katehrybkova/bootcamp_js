@@ -1,0 +1,8 @@
+.preview {
+  display: flex;
+  flex-wrap: wrap;
+}
+li{
+ width: 33%;
+ list-style: none;
+}

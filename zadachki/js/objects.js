@@ -66,27 +66,27 @@
   Функция возвращает общую сумму зарплаты.
 */
 
-const countTotalSalary = function(salaries) {
-    let summ = 0;
-   for(let values in salaries) {
-summ = summ + salaries(values);
-console.log(values)
-   }
-}
+// const countTotalSalary = function(salaries) {
+//     let summ = 0;
+//    for(let values in salaries) {
+// summ = summ + salaries(values);
+// console.log(values)
+//    }
+// }
 
 
 
-// Вызовы функции для проверки
-console.log(
-    countTotalSalary({})
-  ); // 0
+// // Вызовы функции для проверки
+// console.log(
+//     countTotalSalary({})
+//   ); // 0
   
-  console.log(
-    countTotalSalary({
-      mango: 100,
-      poly: 150,
-      alfred: 80
-    })
-  ); // 330
+//   console.log(
+//     countTotalSalary({
+//       mango: 100,
+//       poly: 150,
+//       alfred: 80
+//     })
+//   ); // 330
   
   
