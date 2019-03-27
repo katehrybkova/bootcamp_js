@@ -104,7 +104,7 @@
   } */
 /* //------------------add4 */
 
-  body {
+  /* body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -147,4 +147,4 @@
   
   .result {
     font-size: 32px;
-  }
+  } */

@@ -86,7 +86,7 @@
 // let button = document.querySelector('button');
 // let span = document.querySelector('.result');
 
-// let counter = () => span.textContent = Number(input1.placeholder) + Number(input2.placeholder);
+// let counter = () => span.textContent = Number(input1.value) + Number(input2.value);
 // button.addEventListener('click', counter)
 //---------------------------add3
 /*
@@ -147,16 +147,16 @@
     - не должна перезагружаться страница
     - необходимо получить выбранную опцию и вывести в параграф с классом .result
 */
-// const chkd = document.querySelectorAll('input');
-// const btn = document.querySelector('.btn');
-// const result = document.querySelector('.result');
+const chkd = document.querySelectorAll('input');
+const btn = document.querySelector('.btn');
+const result = document.querySelector('.result');
 
-// btn.addEventListener('click', show);
+btn.addEventListener('click', show);
 
-// function show(e) {
-//   e.preventDefault();
-//   Array.from(chkd).find(i => i.checked === true ? result.textContent += `${i.parentElement.textContent};` : null);
-// }
+function show(e) {
+  e.preventDefault();
+  Array.from(chkd).find(i => i.checked === true ? result.textContent += `${i.parentElement.textContent};` : null);
+}
 
 
 

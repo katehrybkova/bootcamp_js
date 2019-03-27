@@ -4,13 +4,128 @@
   алертом выводился ее src. Обязательно используйте делегирование событий.
 */
 // let img = document.querySelectorAll('img');
-// let clickFunc = () => {
-//   for (let i of Array.from.img) {
 
-//   }
-//   alert(`${img.src}`);
+// for (let image of img){
+//   image.addEventListener('click', e =>  alert(e.target.src));
+
 // }
-// img.addEventListener('click', clickFunc);
+//-------------------add6
+/*
+  Дан ul, а внутри него произвольное количество li с текстом и кнопкой. 
+  Сделайте так, чтобы по нажатию на кнопку, удалялся тот li в котором
+  она находится. Обязательно используйте делегирование событий.
+*/
+// let ul = document.querySelector('ul');
+// let btn = document.querySelectorAll('button');
+
+// let func = function (event) {
+//   const nodeName = event.target.nodeName;
+//   if (nodeName !== 'BUTTON') {
+//     return;
+//   }
+//   event.target.parentElement.remove();
+// }
+// ul.addEventListener('click', func);
+
+// -------------------add7
+/*
+  Дан набор инпутов. Сделайте так, чтобы при потере фокуса все 
+  инпуты проверяли свое содержимое на правильное количество символов. 
+  
+  - Сколько символов должно быть в инпуте, указывается в атрибуте data-length. 
+  - Если введено подходящее количество, то outline инпута становится зеленым, 
+    если неправильное - красным. Для добавления стилей, на вкладке CSS есть стили valid и invalid
+*/
+
+// let inputs = document.querySelectorAll('input');
+
+// let func = function () {
+//   let valueLength = this.value.length;
+//   let dataLength = this.getAttribute('data-length');
+
+//   if (valueLength > 0) {
+//     if (valueLength <= Number(dataLength)) {
+//       this.classList.add('valid');
+//     } else {
+//       this.classList.add('invalid')
+//     }
+//   }
+// }
+// inputs.forEach(el => el.addEventListener('blur', func));
+
+//---------------------------add8
+/*
+  Напишите скрипт который:
+    
+    - При фокусе текстового поля, в p.message рендерит строку "Input is in focus!"
+    - При наборе текста в инпуте (событие input), текущее его значение должно 
+      отображаться в p.input-value 
+*/
+// let input = document.querySelector('input');
+// let p = document.querySelector('p');
+// let func = function(){
+//   p.textContent = "Input is in focus!";
+
+// }
+// input.addEventListener('focus', func)
+//------------------add9
+/*
+  На вкладках HTML и CSS уже готовая верстка модального окна.
+  По умолчанию модальное окно скрыто классом modal-hidden.
+  
+  Напишите скрипт который реализует следующее поведение:
+ 
+  - При клике на кнопке с надписью "Open Modal", модальное окно с классом modal, 
+    должно появляться. Для этого необходимо убрать класс modal-hidden. 
+    Для выбора модального модального окна используйте класс js-modal-backdrop
+ 
+  - При открытом модальном окне, клик на кнопку с крестиком (data-action="close-modal")
+    или на серый фон с прозрачностью (js-modal-backdrop), модальное окно должно закрываться.
+*/
+
+// let button = document.querySelector('.btn');
+// let modal = document.querySelector('.js-modal-backdrop');
+// let close = document.querySelector('.close-btn');
+
+
+// let func = function(){
+// modal.classList.remove('modal-hidden')
+// }
+// let funcClose = function () {
+//   modal.classList.add('modal-hidden')
+
+// }
+// button.addEventListener('click', func);
+// close.addEventListener('click', funcClose);
+// backdrop.addEventListener('click', funcClose);
+//---------------add10
+/*
+  Ознакомьтесь с HTML и CSS.
+  
+  Есть меню навигации, необходимо написать скрипт, который
+  при клике на пункт меню добавит ему класс active,
+  таким образом выделив текущую (активную) ссылку,
+  при этом убрав его у всех остальных элементов меню.
+  
+  Пунктов меню может быть произвольное количество, используйте
+  прием делегирование событий. Учтите клик по самому ul, его
+  необходимо игнорировать.
+  
+  При клике по ссылкам не должна перезагружаться страница!
+*/
+let menu = document.querySelector('.menu');
+let func =  function(e){
+
+let active = document.querySelector('.active');
+active.classList.toggle('active')
+e.target.classList.add('active') ;
+
+
+}
+menu.addEventListener('click', func);
+
+
+
 /* ---------------zadachnik*/
 //---Задача. Повторите поведение кнопки по нажатию на нее (она меняет текст в инпуте):
 // let button = document.querySelector('button');
